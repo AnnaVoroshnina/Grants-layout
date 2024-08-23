@@ -1,0 +1,41 @@
+.page-description{
+  margin-top: 40px;
+
+  .page-description__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+  }
+
+  &__title{
+    margin-bottom: 16px;
+
+    &-start{
+      text-align: start;
+    }
+  }
+  &__text{
+    color: var(--color-text-secondary);
+
+    &-item{
+      &:not(:last-child){
+        margin-bottom: 16px;
+      }
+    }
+    &-link{
+      color: var(--color-accent);
+
+
+      @include hover{
+        color: var(--color-accent-hover);
+      }
+    }
+  }
+
+  &__quote{
+    padding: 32px;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+  }
+}

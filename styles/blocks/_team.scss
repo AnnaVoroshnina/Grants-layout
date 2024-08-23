@@ -1,0 +1,49 @@
+.team{
+  max-width: 808px;
+  width: 100%;
+  padding-block: 40px;
+  border-bottom: 1px solid var(--color-border-hover);
+
+  &__title{
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  &__actions{
+    display: flex;
+    column-gap: 16px;
+    justify-content: start;
+
+    @include mobile{
+      justify-content: center;
+    }
+
+    &-list{
+      display: flex;
+      column-gap: 16px;
+
+      @include mobile{
+        flex-direction: column;
+        row-gap: 16px;
+      }
+    }
+    &-item{
+      &:first-child a .team__person-image{
+        background: url("../images/team/1.svg") center/contain no-repeat;
+      }
+      &:nth-child(2) a .team__person-image{
+        background: url("../images/team/2.svg") center/contain no-repeat;
+      }
+    }
+  }
+
+  &__person{
+    width: 193px;
+    height: 56px;
+
+    &-image{
+      @include square(40px);
+
+      border-radius: 50%;
+    }
+  }
+}

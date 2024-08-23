@@ -1,0 +1,52 @@
+.process{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+
+    @include tablet{
+      flex-direction: column;
+      row-gap: 24px;
+    }
+
+    &::before,
+    &::after{
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 40px;
+
+      @include tablet{
+        rotate: 90deg;
+      }
+    }
+
+    &::before{
+      background: url("../images/icons/right-arrow-curved.svg") center/contain no-repeat;
+      top: 0;
+      left: 27%;
+      z-index: 10;
+
+      @include tablet{
+        top: 324px;
+        left: 50%;
+      }
+      }
+    &::after{
+      background: url("../images/icons/right-arrow-curved-2.svg") center/contain no-repeat;
+      top: 333px;
+      right: 27%;
+
+      @include tablet{
+        top: 672px;
+        right: 50%;
+      }
+    }
+    }
+}

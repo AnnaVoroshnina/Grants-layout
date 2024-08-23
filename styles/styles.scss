@@ -1,0 +1,52 @@
+@import "mixins", "fonts", "media", "globals", "mixins", "normalize", "utils", "variables";
+
+/*index*/
+@import
+"blocks/button",
+"blocks/nav",
+"blocks/header",
+"blocks/mobile-overlay",
+"blocks/cross-button",
+"blocks/soc1al",
+"blocks/logo",
+"blocks/hero",
+"blocks/section",
+"blocks/projects",
+"blocks/avatar",
+"blocks/blog",
+"blocks/image-post",
+"blocks/post",
+"blocks/questions",
+"blocks/process",
+"blocks/process-card",
+"blocks/cta",
+"blocks/footer";
+
+/*discover*/
+
+@import "blocks/card",
+"blocks/initiatives",
+"blocks/filter";
+
+/*funded-grants*/
+@import "blocks/switch",
+"blocks/project-window",
+"blocks/team",
+"blocks/page-description",
+"blocks/transactions",
+"blocks/simular-projects";
+
+/**/
+
+@import "blocks/actions",
+"blocks/profile-person",
+"blocks/expenses",
+"blocks/blog-post";
+
+/**/
+
+@import "blocks/brand",
+"blocks/brand-logo",
+"blocks/brand-avatar",
+"blocks/application",
+"blocks/field";

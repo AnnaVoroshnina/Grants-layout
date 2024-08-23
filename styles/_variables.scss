@@ -1,0 +1,58 @@
+:root{
+  /*background*/
+  --color-bg-primary: #1C1C28;
+  --color-bg-secondary: #393953;
+  --color-bg-secondary-hover: #4F4C64;
+
+  /*accent*/
+  --color-accent: #6966FF;
+  --color-accent-hover: #6C83FF;
+  --color-red: #E45555;
+  --color-green: #16B57F;
+
+  /*gradient*/
+  --color-gradient-brand: linear-gradient(325.79deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+  --color-gradient-grey: linear-gradient(193.53deg, #2C2C3D -7.66%, #1A1A27 79.5%);
+
+
+
+  /*text*/
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #C8C7D8;
+  --color-text-tertiary: #A59EBA;
+
+  /*border*/
+  --color-border: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  --color-border-hover: #393953;
+
+  --font-family-base: 'Circular Std', sans-serif;
+
+  --container-width: 1224px;
+  --container-padding-x: 24px;
+
+  --border: 1px solid var(--color-border);
+  --border-radius: 16px;
+  --border-radius-btn: 7px;
+
+  --section-padding-y: 80px;
+
+  --button-height: 48px;
+
+  --transition-duration: 0.2s;
+
+  @include tablet{
+    --section-padding-y: 40px;
+    --button-height: 40px;
+  }
+
+  --cardWidth: 392px;
+  --cardHeight: 560px;
+
+  @include desktop{
+    --cardWidth: 30vw;
+  }
+  @include tablet{
+    --cardWidth: 256px;
+    --cardHeight: 460px;
+  }
+}

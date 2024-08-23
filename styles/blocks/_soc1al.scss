@@ -1,0 +1,15 @@
+.soc1als{
+  &__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+  }
+
+  &__link{
+    svg *{
+      @include hover{
+        fill: var(--color-accent-hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Funded grant with image</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo logo" href="/">
+            <img
+                    class="logo__image"
+                    src="./images/header-logo.svg"
+                    alt=""
+            >
+        </a>
+        <nav class="header__menu hidden-tablet nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Discover initiatives
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Funded grants
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Program expenses
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        FAQ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button
+                class="header__button button"
+                type="button"
+        >
+            <span class="hidden-tablet">Apply for grant</span>
+            <span class="visible-tablet">Apply</span>
+        </button>
+        <button
+                class="header__burger visible-tablet"
+                type="button"
+                onclick="mobileOverlay.showModal()"
+        >
+            <span class="visually-hidden">Open navigation menu</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 8H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 4H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+</header>
+<main class="content">
+<section class="section container">
+    <div class="section__body">
+        <div class="project-window">
+            <div class="project-window__body">
+                <div class="project-window__header">
+                    <div class="project-window__header-image"></div>
+                    <div class="project-window__header-main">
+                        <h5 class="project-window__category card__subtitle">Crowdfund</h5>
+                        <h1 class="project-window__title">
+                            Youtube dYdX Education Library
+                        </h1>
+                    </div>
+                    <div class="project-window__header-dop">
+                        <div class="filter__indicator filter__indicator--green filter__indicator--funded">
+                            <span>Funded</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.3337 4L6.00033 11.3333L2.66699 8" stroke="white" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="project-window__cost">
+                            Funding amount: <b>$5,000</b>
+                        </div>
+                        <a class="project-window__button button" target="_blank">
+                                <span class="project-window__button--link">
+                            Project link
+                        </span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                      stroke="white" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M10 2H14V6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="button__go-back projects__button projects__button--dark hidden-tablet" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="#0D0D15" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="#0D0D15" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="project-window__team team">
+                    <h4 class="team__title">Team</h4>
+                    <div class="team__actions">
+                        <ul class="team__actions-list">
+                            <li class="team__actions-item">
+                                <a class="team__person actions__link" href="/" target="_blank">
+                                    <span class="team__person-image"></span>
+                                    <span class="team__person-name">Theresa Webb</span>
+                                </a>
+                            </li>
+                            <li class="team__actions-item">
+                                <a class="team__person actions__link" href="/" target="_blank">
+                                    <span class="team__person-image"></span>
+                                    <span class="team__person-name">Jenny Wilson</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-window__description page-description">
+                    <ul class="page-description__list">
+                        <li class="page-description__item">
+                            <h4 class="page-description__title">
+                                Description
+                            </h4>
+                            <div class="page-description__text">
+                                <p>
+                                    Grant includes work on Funding Rates page, Rewards & Tracking Simulator, and CLI
+                                    Trading tool. All will be combined in a community accessible webpage that will
+                                    continue to host additional work done and maintenance on behalf of Chaos Labs.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page-description__item">
+                            <h4 class="page-description__title">
+                                Purpose
+                            </h4>
+                            <div class="page-description__text">
+                                <p>
+                                    Funding Rates page will help promote and guide traders around Perpetual premiums
+                                    found across all assets traded on dYdX. Rewards & Tracking simulator will help
+                                    market the benefits of trading on dYdX and assist current traders in mapping out
+                                    their rewards. The CLI trading tool will make it easier for non-UI based traders
+                                    to execute quickly on dYdX. The general purpose of this grant is to recruit
+                                    Chaos Labs, a very qualified contributor, to work with dYdX on current and
+                                    future projects.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page-description__item">
+                            <h4 class="page-description__title">
+                                Execution
+                            </h4>
+                            <div class="page-description__text">
+                                <p>
+                                    3 months to completion. Each individual grant is estimated to take 120 days, but
+                                    will be worked on concurrently.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page-description__item">
+                            <h4 class="page-description__title">
+                                Payment structure
+                            </h4>
+                            <div class="page-description__text">
+                                <p>
+                                    25% upfront / 75% at completion of all Grants
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page-description__item">
+                            <h4 class="page-description__title">
+                                Useful links
+                            </h4>
+                            <div class="page-description__text">
+                                <ul class="page-description__text-list">
+                                    <li class="page-description__text-item">
+                                        <a class="page-description__text-link" href="/" target="_blank">
+                                            <span>www.granttitleproject.com</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                      stroke="white" stroke-width="2" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                                <path d="M10 2H14V6" stroke="white" stroke-width="2"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-description__text-item">
+                                        <a class="page-description__text-link" href="/" target="_blank">
+                                            <span>www.granttitleproject.com</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                      stroke="white" stroke-width="2" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                                <path d="M10 2H14V6" stroke="white" stroke-width="2"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-description__text-item">
+                                        <a class="page-description__text-link" href="/" target="_blank">
+                                            <span>www.granttitleproject.com</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                      stroke="white" stroke-width="2" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                                <path d="M10 2H14V6" stroke="white" stroke-width="2"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                                <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="page-description__item">
+                            <h4 class="page-description__title">
+                                Funding transactions
+                            </h4>
+                            <div class="page-description__text transactions">
+                                <ul class="transactions__list">
+                                    <li class="transactions__item">
+                                        <div class="transactions__info">
+                                            <h4 class="transactions__title">
+                                                Round 9
+                                            </h4>
+                                            <div class="transactions__date">
+                                                <time datetime="10.10.2023">10.10.2023</time>
+                                            </div>
+                                            <div class="transactions__description">
+                                                <p>
+                                                    Description
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="transactions__link">
+                                            <div class="transactions__count">
+                                                $250,000.00
+                                            </div>
+                                            <a href="/" target="_blank">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="#A59EBA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15 3H21V9" stroke="#A59EBA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M10 14L21 3" stroke="#A59EBA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="transactions__item">
+                                        <div class="transactions__info">
+                                            <h4 class="transactions__title">
+                                                Funding title
+                                            </h4>
+                                            <div class="transactions__date">
+                                                <time datetime="11.02.2024">11.02.2024</time>
+                                            </div>
+                                            <div class="transactions__description">
+                                                <p>
+                                                    Description
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="transactions__link">
+                                            <div class="transactions__count">
+                                                $30,000.00
+                                            </div>
+                                            <a href="/" target="_blank">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="#A59EBA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15 3H21V9" stroke="#A59EBA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M10 14L21 3" stroke="#A59EBA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section container">
+    <div class="section__bg"></div>
+    <header class="section__header">
+        <h2 class="section__title">More grants like this</h2>
+        <a class="section__link" href="/" target="_blank">
+            <span>View all similar projects</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.83301 8H13.1663" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M8.5 3.33337L13.1667 8.00004L8.5 12.6667" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </header>
+    <div class="section__body">
+        <div class="similar-projects">
+            <ul class="similar-projects__list">
+                <li class="projects__item">
+                    <article class="card">
+                        <h5 class="card__subtitle">Category</h5>
+                        <h3 class="card__title">Trading Strategy and Risk Tool</h3>
+                        <h5 class="card__finance">Funding amount: $5,000 - $6,000</h5>
+                        <div class="card__description">
+                            <p>
+                                They were used to create the machines that launched two waves of industrial
+                                revolution — the first one powered by steam and the secon ...
+                            </p>
+                        </div>
+                    </article>
+                    <div class="project__avatar avatar">
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/1-1.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/1-2.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                    </div>
+                </li>
+                <li class="projects__item">
+                    <div class="projects__item-image"></div>
+                    <article class="card">
+                        <h5 class="card__subtitle">Category</h5>
+                        <h3 class="card__title">dydx.vote + Subgraph</h3>
+                        <h5 class="card__finance">Funding amount: $5,000 - $6,000</h5>
+                        <div class="card__description">
+                            <p>
+                                We know how large objects will act, but things on a small scale just do not act that
+                                way.
+                            </p>
+                        </div>
+                    </article>
+                    <div class="project__avatar avatar">
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/2-1.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/2-2.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/2-3.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__inner">
+        <a class="footer__logo logo" href="/">
+            <img
+                    class="logo__image"
+                    src="./images/footer-logo.svg"
+                    alt=""
+            >
+        </a>
+        <nav class="footer__menu nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        About
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        FAQ
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Brand assets
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        <span>dYdX Foundation</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 2H14V6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        <span>dYdX trading</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 2H14V6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+                <li class="soc1als__item">
+                    <a class="soc1als__link" href="/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z"
+                                  fill="#C8C7D8"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a class="soc1als__link" href="/">
+                        <span class="visually-hidden">Discord</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.317 4.15704C18.7873 3.45516 17.147 2.93804 15.4319 2.64187C15.4007 2.63615 15.3695 2.65044 15.3534 2.67901C15.1424 3.05422 14.9087 3.54372 14.7451 3.92846C12.9004 3.65229 11.0652 3.65229 9.25832 3.92846C9.09465 3.53517 8.85248 3.05422 8.64057 2.67901C8.62449 2.65139 8.59328 2.6371 8.56205 2.64187C6.84791 2.93709 5.20756 3.45421 3.67693 4.15704C3.66368 4.16275 3.65233 4.17228 3.64479 4.18466C0.533392 8.83302 -0.31895 13.3671 0.0991801 17.845C0.101072 17.8669 0.11337 17.8879 0.130398 17.9012C2.18321 19.4087 4.17171 20.3239 6.12328 20.9306C6.15451 20.9401 6.18761 20.9287 6.20748 20.903C6.66913 20.2725 7.08064 19.6078 7.43348 18.9088C7.4543 18.8678 7.43442 18.8193 7.39186 18.8031C6.73913 18.5555 6.1176 18.2536 5.51973 17.9107C5.47244 17.8831 5.46865 17.8155 5.51216 17.7831C5.63797 17.6888 5.76382 17.5907 5.88396 17.4917C5.90569 17.4736 5.93598 17.4698 5.96153 17.4812C9.88928 19.2745 14.1415 19.2745 18.023 17.4812C18.0485 17.4688 18.0788 17.4726 18.1015 17.4907C18.2216 17.5898 18.3475 17.6888 18.4742 17.7831C18.5177 17.8155 18.5149 17.8831 18.4676 17.9107C17.8697 18.2602 17.2482 18.5555 16.5945 18.8021C16.552 18.8183 16.533 18.8678 16.5538 18.9088C16.9143 19.6068 17.3258 20.2716 17.7789 20.902C17.7978 20.9287 17.8319 20.9401 17.8631 20.9306C19.8241 20.3239 21.8126 19.4087 23.8654 17.9012C23.8834 17.8879 23.8948 17.8679 23.8967 17.846C24.3971 12.669 23.0585 8.1721 20.3482 4.1856C20.3416 4.17228 20.3303 4.16275 20.317 4.15704ZM8.02002 15.1184C6.8375 15.1184 5.86313 14.0328 5.86313 12.6995C5.86313 11.3662 6.8186 10.2806 8.02002 10.2806C9.23087 10.2806 10.1958 11.3758 10.1769 12.6995C10.1769 14.0328 9.22141 15.1184 8.02002 15.1184ZM15.9947 15.1184C14.8123 15.1184 13.8379 14.0328 13.8379 12.6995C13.8379 11.3662 14.7933 10.2806 15.9947 10.2806C17.2056 10.2806 18.1705 11.3758 18.1516 12.6995C18.1516 14.0328 17.2056 15.1184 15.9947 15.1184Z"
+                                  fill="#C8C7D8"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<dialog class="mobile-overlay visible-tablet" id="mobileOverlay">
+    <form
+            class="mobile-overlay__close-button-wrapper"
+            method="dialog"
+    >
+        <div class="mobile-overlay__inner">
+            <div class="mobile-overlay__header">
+                <a class="header__logo logo" href="/">
+                    <img
+                            class="logo__image"
+                            src="./images/header-logo.svg"
+                            alt=""
+                            width="80" height="48" loading="lazy"
+                    >
+                </a>
+                <button
+                        class="mobile-overlay__button button"
+                        type="button"
+                >
+                    Apply
+                </button>
+            </div>
+            <button
+                    class="mobile-overlay__close-button cross-button"
+                    type="submit"
+            >
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </div>
+    </form>
+
+    <div class="mobile-overlay__menu">
+        <ul class="mobile-overlay__list">
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Discover initiatives
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Funded grants
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Program expenses
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Blog
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    FAQ
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile-overlay__soc1als soc1als">
+        <ul class="soc1als__list">
+            <li class="soc1als__item">
+                <a class="soc1als__link" href="/">
+                    <span class="visually-hidden">Twitter</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z"
+                              fill="#C8C7D8"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="soc1als__item">
+                <a class="soc1als__link" href="/">
+                    <span class="visually-hidden">Discord</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.317 4.15704C18.7873 3.45516 17.147 2.93804 15.4319 2.64187C15.4007 2.63615 15.3695 2.65044 15.3534 2.67901C15.1424 3.05422 14.9087 3.54372 14.7451 3.92846C12.9004 3.65229 11.0652 3.65229 9.25832 3.92846C9.09465 3.53517 8.85248 3.05422 8.64057 2.67901C8.62449 2.65139 8.59328 2.6371 8.56205 2.64187C6.84791 2.93709 5.20756 3.45421 3.67693 4.15704C3.66368 4.16275 3.65233 4.17228 3.64479 4.18466C0.533392 8.83302 -0.31895 13.3671 0.0991801 17.845C0.101072 17.8669 0.11337 17.8879 0.130398 17.9012C2.18321 19.4087 4.17171 20.3239 6.12328 20.9306C6.15451 20.9401 6.18761 20.9287 6.20748 20.903C6.66913 20.2725 7.08064 19.6078 7.43348 18.9088C7.4543 18.8678 7.43442 18.8193 7.39186 18.8031C6.73913 18.5555 6.1176 18.2536 5.51973 17.9107C5.47244 17.8831 5.46865 17.8155 5.51216 17.7831C5.63797 17.6888 5.76382 17.5907 5.88396 17.4917C5.90569 17.4736 5.93598 17.4698 5.96153 17.4812C9.88928 19.2745 14.1415 19.2745 18.023 17.4812C18.0485 17.4688 18.0788 17.4726 18.1015 17.4907C18.2216 17.5898 18.3475 17.6888 18.4742 17.7831C18.5177 17.8155 18.5149 17.8831 18.4676 17.9107C17.8697 18.2602 17.2482 18.5555 16.5945 18.8021C16.552 18.8183 16.533 18.8678 16.5538 18.9088C16.9143 19.6068 17.3258 20.2716 17.7789 20.902C17.7978 20.9287 17.8319 20.9401 17.8631 20.9306C19.8241 20.3239 21.8126 19.4087 23.8654 17.9012C23.8834 17.8879 23.8948 17.8679 23.8967 17.846C24.3971 12.669 23.0585 8.1721 20.3482 4.1856C20.3416 4.17228 20.3303 4.16275 20.317 4.15704ZM8.02002 15.1184C6.8375 15.1184 5.86313 14.0328 5.86313 12.6995C5.86313 11.3662 6.8186 10.2806 8.02002 10.2806C9.23087 10.2806 10.1958 11.3758 10.1769 12.6995C10.1769 14.0328 9.22141 15.1184 8.02002 15.1184ZM15.9947 15.1184C14.8123 15.1184 13.8379 14.0328 13.8379 12.6995C13.8379 11.3662 14.7933 10.2806 15.9947 10.2806C17.2056 10.2806 18.1705 11.3758 18.1516 12.6995C18.1516 14.0328 17.2056 15.1184 15.9947 15.1184Z"
+                              fill="#C8C7D8"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</dialog>
+</body>
+</html>

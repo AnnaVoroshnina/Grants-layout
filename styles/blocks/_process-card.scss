@@ -1,0 +1,58 @@
+.process-card{
+  position: relative;
+  padding: 28px;
+  width: 392px;
+  height: 480px;
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+
+  @include hover{
+    background-color: var(--color-bg-secondary-hover);
+  }
+
+  @include tablet{
+    width: 272px;
+    height: 320px;
+    padding: 22px;
+  }
+
+  &:first-child{
+    rotate: -1deg;
+    top:-19px;
+
+    @include tablet{
+      top: 0;
+    }
+  }
+  &:nth-child(2){
+    rotate: 3deg;
+    top: 3px;
+  }
+  &:last-child{
+    rotate: -2deg;
+    top: -14px;
+
+    @include tablet{
+      top: 8px;
+    }
+  }
+
+  &__counter{
+    @include fluid-text(48, 64);
+
+    font-family: 'Nanum Pen', sans-serif;
+    margin-bottom: 25px;
+
+    @include tablet{
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 10px;
+  }
+
+  &__description{
+
+  }
+}

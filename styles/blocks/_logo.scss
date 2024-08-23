@@ -1,0 +1,10 @@
+.logo{
+  &__image{
+    width: 120px;
+    height: 72px;
+    @include tablet{
+      width: 80px;
+      height: 48px
+    }
+  }
+}

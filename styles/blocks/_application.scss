@@ -1,0 +1,11 @@
+.application{
+  max-width: 808px;
+  border-radius: var(--border-radius);
+  padding: 70px 100px;
+  background-color: var(--color-bg-secondary);
+  margin-inline: auto;
+
+  @include tablet{
+    padding: 30px 30px;
+  }
+}

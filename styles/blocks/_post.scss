@@ -1,0 +1,14 @@
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 168px;
+  margin: 24px;
+
+
+  &__subtitle,
+  &__date{
+    font-family: 'Space Mono', sans-serif;
+    color: var(--color-text-tertiary);
+  }
+}

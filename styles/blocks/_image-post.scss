@@ -1,0 +1,105 @@
+.image-post {
+  position: relative;
+  width: 100%;
+  height: 208px;
+  background: url("../images/image-bg.svg") var(--color-bg-primary) center/cover no-repeat;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: center;
+  align-items: start;
+
+  @include tablet{
+    width: 272px;
+    height: 150px;
+  }
+
+
+  &__theme {
+    font-size: 40px;
+    line-height: 1;
+    position: relative;
+
+    @include tablet {
+      font-size: 25px;
+    }
+
+    &::after {
+      @include abs-center;
+
+      content: "";
+      top: 40%;
+      position: absolute;
+      background: url("../images/circle.svg") center/cover no-repeat;
+      width: 325px;
+      height: 162px;
+
+      @include tablet {
+        width: 250px;
+        height: 110px;
+        left: 45%;
+      }
+    }
+
+    &--window {
+      font-size: 70px;
+
+      @include mobile{
+        font-size: 26px;
+      }
+
+
+      &::after {
+        @include abs-center;
+
+        content: "";
+        top: 50%;
+        position: absolute;
+        background: url("../images/circle.svg") center/cover no-repeat;
+        width: 600px;
+        height: 335px;
+
+        @include mobile {
+          width: 255px;
+          height: 130px;
+        }
+      }
+    }
+  }
+  &__theme,
+  &__subtitle{
+    margin-left: 70px;
+  }
+  &__subtitle{
+    font-family: 'Space Mono', sans-serif;
+    @include tablet{
+      font-size: 12px;
+    }
+
+    &--window{
+      font-size: 30px;
+
+      @include mobile{
+        font-size: 12px;
+      }
+    }
+  }
+  &__around {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 392px;
+    height: 208px;
+
+    @include tablet{
+      width: 272px;
+      height: 150px;
+    }
+    svg *{
+      fill: var(--color-accent);
+    }
+  }
+
+
+}

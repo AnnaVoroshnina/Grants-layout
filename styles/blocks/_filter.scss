@@ -1,0 +1,91 @@
+.filter {
+  margin-bottom: 80px;
+
+  @include tablet {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    flex-shrink: 0;
+
+
+    @include mobile {
+      position: relative;
+      justify-content: start;
+      scroll-snap-type: x mandatory;
+      overflow-x: scroll;
+      width: 95vw;
+    }
+
+    &--projects{
+      @include  desktop{
+        column-gap: 12px;
+      }
+      @include tablet {
+        position: relative;
+        justify-content: start;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        width: 95vw;
+      }
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+
+    @include mobile {
+      scroll-snap-align: start;
+    }
+  }
+
+  &__indicator {
+    padding: 4px 16px;
+    border-radius: 100px;
+    height: 32px;
+
+    &--dark {
+      background-color: var(--color-bg-primary);
+    }
+
+    &--blue {
+      background-color: var(--color-accent);
+    }
+
+    &--green {
+      background-color: var(--color-green);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 8px;
+    }
+
+    &--completed{
+      max-width: 136px;
+    }
+
+    &--funded{
+      max-width: 109px;
+    }
+  }
+
+  &__button-arrow{
+    @include reset-button;
+
+    position: absolute;
+    background-color: hsla(240, 18%, 13%, 0.5);
+    color: var(--color-text-primary);
+    width: 28px;
+    aspect-ratio: 1;
+    padding-top: 6px;
+    right: -8px;
+    top: 6px;
+    box-shadow: 15px 15px 15px hsla(240, 18%, 13%, 0.5);
+
+  }
+}

@@ -1,0 +1,52 @@
+.expenses{
+
+
+  &__cards{
+    width: 100%;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 808px;
+    margin-inline: auto;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+    width: 100%;
+    padding: 24px;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+
+    @include mobile{
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  &__link{
+    display: flex;
+    column-gap: 16px;
+    align-items: start;
+    justify-content: space-between;
+
+    & h5{
+      color: var(--color-text-primary);
+    }
+
+    & a{
+      padding: 5px;
+      width: 35px;
+      height: 35px;
+      color: var(--color-text-secondary);
+
+      @include hover{
+        color: var(--color-accent-hover);
+      }
+    }
+  }
+}

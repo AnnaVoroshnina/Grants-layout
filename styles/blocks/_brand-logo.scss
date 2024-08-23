@@ -1,0 +1,45 @@
+.brand-logo{
+
+  &__list{
+    display: grid;
+    grid-template-columns: 392px 392px;
+    gap: 24px;
+    justify-content: center;
+
+    @include tablet{
+      grid-template-columns: 253px
+    }
+  }
+
+  &__image{
+    position: relative;
+    width: 392px;
+    height: 250px;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 85px 128px;
+    margin-bottom: 16px;
+
+    @include tablet{
+      width: 253px;
+      height: 180px;
+      padding: 50px 80px;
+    }
+
+    &--light{
+      background-color: var(--color-text-primary);
+    }
+
+    &::after{
+      position: absolute;
+      content: "";
+      display: inline-block;
+      background: url("../images/icons/brand/download.svg") var(--color-bg-secondary-hover) center no-repeat;
+      border-radius: 50%;
+      top: 16px;
+      right: 16px;
+
+      @include square(44px);
+    }
+  }
+}

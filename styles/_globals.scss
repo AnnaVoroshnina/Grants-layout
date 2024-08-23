@@ -1,0 +1,49 @@
+body{
+  @include fluid-text(14, 16);
+
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  background: url("../images/header-bg.png") var(--color-bg-primary) top/contain no-repeat;
+}
+
+
+a,
+button,
+input,
+textarea,
+svg *{
+  transition-duration: var(--transition-duration);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4{
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1, .h1{
+  @include fluid-text(40, 80);
+  text-align: center;
+}
+h2, .h2{
+  @include fluid-text(24, 40);
+  text-align: center;
+}
+h3, .h3{
+  @include fluid-text(20, 24);
+}
+
+h4, .h4{
+  @include fluid-text(16, 20);
+}
+
+h5, .h5{
+  @include fluid-text(14, 16);
+}

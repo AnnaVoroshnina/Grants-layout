@@ -1,0 +1,58 @@
+.section{
+  padding-bottom: 80px;
+  position: relative;
+
+  @include mobile{
+    padding-bottom: 40px;
+  }
+  &__bg{
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    width: 920px;
+    height: 320px;
+    background-image: url("../images/title-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &__header{
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    max-width: 600px;
+    padding-block: 80px;
+    padding-inline: 24px;
+
+
+    @include mobile{
+      padding-top: 40px;
+      padding-bottom: 48px;
+    }
+  }
+
+  &__description,
+  &__link{
+    @include fluid-text(16, 18);
+  }
+  &__description{
+    text-align: center;
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    color: var(--color-accent);
+    cursor: pointer;
+
+    @include hover{
+      color: var(--color-accent-hover);
+    }
+
+    & span{
+      margin-right: 8px;
+    }
+  }
+}

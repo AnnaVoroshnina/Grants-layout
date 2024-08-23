@@ -1,0 +1,21 @@
+.card{
+  &__subtitle,
+  &__finance,
+  &__type{
+    font-family: 'Space Mono', sans-serif;
+    color: var(--color-text-tertiary);
+  }
+  &__subtitle,
+  &__title{
+    margin-bottom: 8px;
+  }
+  &__finance,
+  &__type{
+    margin-bottom: 16px;
+    & span{
+      padding-block: 8px;
+      display: inline-block;
+
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.transactions{
+&__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+
+    @include mobile{
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 8px;
+  }
+  &__date,
+  &__count{
+    @include fluid-text(14,16);
+    font-family: 'Space Mono', sans-serif;
+  }
+  &__date{
+    margin-bottom: 16px;
+  }
+  &__count{
+    padding-block: 5px;
+  }
+  &__link{
+    display: flex;
+    align-items: start;
+    column-gap: 16px;
+
+    @include mobile{
+      justify-content: space-between;
+    }
+    & a{
+      padding: 5px;
+      width: 35px;
+      height: 35px;
+
+      @include hover{
+        color: var(--color-accent-hover);
+      }
+    }
+  }
+}

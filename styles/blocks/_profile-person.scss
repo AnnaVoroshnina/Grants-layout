@@ -1,0 +1,57 @@
+.profile-person {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  padding-top: 80px;
+  max-width: 808px;
+  margin-inline: auto;
+
+  @include tablet{
+    padding-top: 24px;
+  }
+
+  &__image{
+    @include square(220px);
+    border-radius: 50%;
+    background: url("../images/team/2.svg") center/contain no-repeat;
+
+    @include tablet{
+      @include square(110px);
+    }
+  }
+
+  &__title{
+    margin-bottom: 16px;
+  }
+  &__description{
+    color: var(--color-text-secondary);
+  }
+
+  &__links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 16px;
+    justify-content: start;
+    width: 100%;
+  }
+
+  &__soc1als{
+    &-list{
+      display: flex;
+      column-gap: 16px;
+      justify-content: start;
+
+      @include mobile{
+        flex-direction: column;
+        row-gap: 16px;
+      }
+    }
+
+    &-link{
+      padding: 8px 16px 8px 8px;
+    }
+  }
+}

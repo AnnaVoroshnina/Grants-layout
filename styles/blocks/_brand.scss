@@ -1,0 +1,32 @@
+.brand{
+  max-width: 808px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+
+  @include tablet{
+    row-gap: 40px;
+  }
+
+  &__list{
+    display: grid;
+    gap: 80px;
+
+    @include tablet{
+      gap: 40px;
+    }
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  &__guidelines{
+    &-title{
+      margin-bottom: 16px;
+    }
+    &-description{
+      color: var(--color-text-secondary);
+    }
+  }
+}

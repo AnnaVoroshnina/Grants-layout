@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Granty</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo logo" href="/">
+            <img
+                    class="logo__image"
+                    src="./images/header-logo.svg"
+                    alt=""
+            >
+        </a>
+        <nav class="header__menu hidden-tablet nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Discover initiatives
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Funded grants
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Program expenses
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        FAQ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button
+                class="header__button button"
+                type="button"
+        >
+            <span class="hidden-tablet">Apply for grant</span>
+            <span class="visible-tablet">Apply</span>
+        </button>
+        <button
+                class="header__burger visible-tablet"
+                type="button"
+                onclick="mobileOverlay.showModal()"
+        >
+            <span class="visually-hidden">Open navigation menu</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 8H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 4H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+</header>
+<main class="content">
+<section class="section container">
+<div class="section__body">
+    <div class="profile-person">
+        <span class="profile-person__image"></span>
+        <h1 class="profile-person__name">Jane Cooper</h1>
+        <div class="profile-person__about">
+            <h4 class="profile-person__title">
+                About
+            </h4>
+            <div class="profile-person__description">
+                <p>
+                    For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from the atmosphere and the athlete's performance will generally be better at high altitude.
+                </p>
+            </div>
+        </div>
+        <div class="profile-person__links">
+            <h4 class="profile-person__title">
+                Links
+            </h4>
+            <div class="profile-person__soc1als">
+                <ul class="profile-person__soc1als-list">
+                    <li class="profile-person__soc1als-item actions">
+                        <a class="profile-person__soc1als-link actions__link" href="/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z" fill="#C8C7D8"/>
+                            </svg>
+                            <span class="profile-person__soc1als-name">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="profile-person__actions-item actions">
+                        <a class="profile-person__soc1als-link actions__link" href="/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2352_24880)">
+                                    <path d="M22.2283 0H1.77167C1.30179 0 0.851161 0.186657 0.518909 0.518909C0.186657 0.851161 0 1.30179 0 1.77167V22.2283C0 22.6982 0.186657 23.1488 0.518909 23.4811C0.851161 23.8133 1.30179 24 1.77167 24H22.2283C22.6982 24 23.1488 23.8133 23.4811 23.4811C23.8133 23.1488 24 22.6982 24 22.2283V1.77167C24 1.30179 23.8133 0.851161 23.4811 0.518909C23.1488 0.186657 22.6982 0 22.2283 0ZM7.15333 20.445H3.545V8.98333H7.15333V20.445ZM5.34667 7.395C4.93736 7.3927 4.53792 7.2692 4.19873 7.04009C3.85955 6.81098 3.59584 6.48653 3.44088 6.10769C3.28591 5.72885 3.24665 5.31259 3.32803 4.91145C3.40941 4.51032 3.6078 4.14228 3.89816 3.85378C4.18851 3.56529 4.55782 3.36927 4.95947 3.29046C5.36112 3.21165 5.77711 3.25359 6.15495 3.41099C6.53279 3.56838 6.85554 3.83417 7.08247 4.17481C7.30939 4.51546 7.43032 4.91569 7.43 5.325C7.43386 5.59903 7.38251 5.87104 7.27901 6.1248C7.17551 6.37857 7.02198 6.6089 6.82757 6.80207C6.63316 6.99523 6.40185 7.14728 6.14742 7.24915C5.893 7.35102 5.62067 7.40062 5.34667 7.395ZM20.4533 20.455H16.8467V14.1933C16.8467 12.3467 16.0617 11.7767 15.0483 11.7767C13.9783 11.7767 12.9283 12.5833 12.9283 14.24V20.455H9.32V8.99167H12.79V10.58H12.8367C13.185 9.875 14.405 8.67 16.2667 8.67C18.28 8.67 20.455 9.865 20.455 13.365L20.4533 20.455Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2352_24880">
+                                        <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="profile-person__soc1al-name">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="profile-person__actions-item actions">
+                        <a class="profile-person__soc1als-link actions__link" href="/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2352_24884)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9997 0.5C9.15088 0.501478 6.39552 1.51046 4.22626 3.34652C2.057 5.18259 0.615293 7.72601 0.158934 10.522C-0.297425 13.318 0.261316 16.1842 1.73526 18.6082C3.2092 21.0321 5.50223 22.8558 8.20432 23.753C8.80044 23.8636 9.02499 23.4942 9.02499 23.18C9.02499 22.8659 9.01306 21.955 9.00909 20.9592C5.67079 21.6804 4.96537 19.5505 4.96537 19.5505C4.42091 18.1674 3.63403 17.8039 3.63403 17.8039C2.5451 17.065 3.7155 17.0788 3.7155 17.0788C4.92166 17.1637 5.55555 18.3097 5.55555 18.3097C6.6246 20.1333 8.36328 19.6058 9.04684 19.2976C9.15414 18.5251 9.46612 17.9995 9.80989 17.7012C7.14322 17.4008 4.34143 16.3774 4.34143 11.8054C4.3249 10.6197 4.76741 9.47305 5.5774 8.60268C5.4542 8.30236 5.04287 7.08923 5.69463 5.44143C5.69463 5.44143 6.70209 5.12136 8.99519 6.66444C10.9621 6.12962 13.0373 6.12962 15.0041 6.66444C17.2952 5.12136 18.3007 5.44143 18.3007 5.44143C18.9544 7.08528 18.5431 8.29841 18.4199 8.60268C19.2325 9.47319 19.6759 10.6219 19.6579 11.8094C19.6579 16.3912 16.8501 17.4008 14.1795 17.6952C14.6087 18.0667 14.9922 18.7918 14.9922 19.9061C14.9922 21.5026 14.9783 22.7868 14.9783 23.18C14.9783 23.4981 15.1949 23.8695 15.8029 23.753C18.5053 22.8557 20.7986 21.0317 22.2725 18.6073C23.7464 16.183 24.3049 13.3163 23.848 10.5201C23.3911 7.7238 21.9487 5.18036 19.7787 3.34461C17.6087 1.50886 14.8527 0.500541 12.0036 0.5H11.9997Z" fill="white"/>
+                                    <path d="M4.54553 17.6326C4.5197 17.6919 4.42432 17.7097 4.34683 17.6682C4.26933 17.6267 4.21171 17.5496 4.23953 17.4884C4.26735 17.4271 4.36074 17.4113 4.43824 17.4528C4.51573 17.4943 4.57534 17.5733 4.54553 17.6326Z" fill="white"/>
+                                    <path d="M5.03123 18.1711C4.99008 18.1918 4.943 18.1975 4.89805 18.1874C4.8531 18.1773 4.81308 18.152 4.78483 18.1158C4.70734 18.0328 4.69143 17.9182 4.75104 17.8669C4.81066 17.8155 4.91797 17.8392 4.99546 17.9222C5.07296 18.0052 5.09084 18.1198 5.03123 18.1711Z" fill="white"/>
+                                    <path d="M5.50485 18.8558C5.43133 18.9072 5.30614 18.8558 5.23659 18.7531C5.21736 18.7346 5.20207 18.7125 5.19162 18.6881C5.18117 18.6637 5.17578 18.6374 5.17578 18.6108C5.17578 18.5843 5.18117 18.558 5.19162 18.5335C5.20207 18.5091 5.21736 18.487 5.23659 18.4686C5.31011 18.4192 5.43531 18.4686 5.50485 18.5693C5.5744 18.6701 5.57639 18.8044 5.50485 18.8558Z" fill="white"/>
+                                    <path d="M6.14563 19.5212C6.08005 19.5943 5.94692 19.5746 5.83763 19.4758C5.72834 19.377 5.7025 19.2426 5.76808 19.1715C5.83365 19.1004 5.96679 19.1202 6.08005 19.217C6.19331 19.3138 6.21518 19.4501 6.14563 19.5212Z" fill="white"/>
+                                    <path d="M7.04617 19.9084C7.01637 20.0012 6.88124 20.0427 6.74612 20.0032C6.611 19.9637 6.52158 19.8531 6.54741 19.7582C6.57325 19.6634 6.71036 19.6199 6.84747 19.6634C6.98457 19.7069 7.07201 19.8116 7.04617 19.9084Z" fill="white"/>
+                                    <path d="M8.02832 19.9747C8.02832 20.0715 7.91705 20.1545 7.77398 20.1565C7.63091 20.1584 7.51367 20.0794 7.51367 19.9826C7.51367 19.8858 7.62494 19.8028 7.76801 19.8008C7.91108 19.7988 8.02832 19.8759 8.02832 19.9747Z" fill="white"/>
+                                    <path d="M8.94238 19.8219C8.96027 19.9188 8.86091 20.0195 8.71784 20.0432C8.57477 20.0669 8.44959 20.0096 8.4317 19.9148C8.41382 19.82 8.51715 19.7172 8.65624 19.6915C8.79534 19.6659 8.9245 19.7251 8.94238 19.8219Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2352_24884">
+                                        <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="profile-person__soc1al-name">Github</span>
+                        </a>
+                    </li>
+                    <li class="profile-person__actions-item actions">
+                        <a class="profile-person__soc1als-link actions__link" href="/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9403 15.7513 14.6897C16.4231 14.4392 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59695 21.9548 8.33394 21.9434 7.02296C21.932 5.71198 21.4061 4.45791 20.4791 3.53087C19.5521 2.60383 18.298 2.07799 16.987 2.0666C15.676 2.0552 14.413 2.55918 13.47 3.46997L11.75 5.17997" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.0002 10.9992C13.5707 10.4251 13.0228 9.95007 12.3936 9.60631C11.7645 9.26255 11.0687 9.05813 10.3535 9.00691C9.63841 8.9557 8.92061 9.05888 8.24885 9.30947C7.5771 9.56005 6.96709 9.95218 6.4602 10.4592L3.4602 13.4592C2.54941 14.4023 2.04544 15.6653 2.05683 16.9763C2.06822 18.2872 2.59407 19.5413 3.52111 20.4683C4.44815 21.3954 5.70221 21.9212 7.01319 21.9326C8.32418 21.944 9.58719 21.44 10.5302 20.5292L12.2402 18.8192" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="profile-person__soc1al-name">Website</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="button__go-back projects__button projects__button--dark hidden-tablet" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="#0D0D15" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="#0D0D15" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+</div>
+</section>
+
+<section class="section container">
+    <div class="section__bg"></div>
+    <header class="section__header">
+        <h2 class="section__title">Projects</h2>
+    </header>
+    <div class="section__body">
+        <div class="similar-projects">
+            <ul class="similar-projects__list">
+                <li class="projects__item">
+                    <article class="card">
+                        <h5 class="card__subtitle">Category</h5>
+                        <h3 class="card__title">Trading Strategy and Risk Tool</h3>
+                        <h5 class="card__finance">Funding amount: $5,000 - $6,000</h5>
+                        <div class="card__description">
+                            <p>
+                                They were used to create the machines that launched two waves of industrial
+                                revolution — the first one powered by steam and the secon ...
+                            </p>
+                        </div>
+                    </article>
+                    <div class="project__avatar avatar">
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/1-1.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/1-2.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                    </div>
+                </li>
+                <li class="projects__item">
+                    <div class="projects__item-image"></div>
+                    <article class="card">
+                        <h5 class="card__subtitle">Category</h5>
+                        <h3 class="card__title">dydx.vote + Subgraph</h3>
+                        <h5 class="card__finance">Funding amount: $5,000 - $6,000</h5>
+                        <div class="card__description">
+                            <p>
+                                We know how large objects will act, but things on a small scale just do not act that
+                                way.
+                            </p>
+                        </div>
+                    </article>
+                    <div class="project__avatar avatar">
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/2-1.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/2-2.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                        <img
+                                class="avatar__image"
+                                src="./images/avatar/2-3.svg"
+                                alt=""
+                                width="40" height="40" loading="lazy"
+                        >
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__inner">
+        <a class="footer__logo logo" href="/">
+            <img
+                    class="logo__image"
+                    src="./images/footer-logo.svg"
+                    alt=""
+            >
+        </a>
+        <nav class="footer__menu nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        About
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        FAQ
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        Brand assets
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        <span>dYdX Foundation</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 2H14V6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/">
+                        <span>dYdX trading</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 2H14V6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.66675 9.33333L14.0001 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+                <li class="soc1als__item">
+                    <a class="soc1als__link" href="/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z"
+                                  fill="#C8C7D8"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a class="soc1als__link" href="/">
+                        <span class="visually-hidden">Discord</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.317 4.15704C18.7873 3.45516 17.147 2.93804 15.4319 2.64187C15.4007 2.63615 15.3695 2.65044 15.3534 2.67901C15.1424 3.05422 14.9087 3.54372 14.7451 3.92846C12.9004 3.65229 11.0652 3.65229 9.25832 3.92846C9.09465 3.53517 8.85248 3.05422 8.64057 2.67901C8.62449 2.65139 8.59328 2.6371 8.56205 2.64187C6.84791 2.93709 5.20756 3.45421 3.67693 4.15704C3.66368 4.16275 3.65233 4.17228 3.64479 4.18466C0.533392 8.83302 -0.31895 13.3671 0.0991801 17.845C0.101072 17.8669 0.11337 17.8879 0.130398 17.9012C2.18321 19.4087 4.17171 20.3239 6.12328 20.9306C6.15451 20.9401 6.18761 20.9287 6.20748 20.903C6.66913 20.2725 7.08064 19.6078 7.43348 18.9088C7.4543 18.8678 7.43442 18.8193 7.39186 18.8031C6.73913 18.5555 6.1176 18.2536 5.51973 17.9107C5.47244 17.8831 5.46865 17.8155 5.51216 17.7831C5.63797 17.6888 5.76382 17.5907 5.88396 17.4917C5.90569 17.4736 5.93598 17.4698 5.96153 17.4812C9.88928 19.2745 14.1415 19.2745 18.023 17.4812C18.0485 17.4688 18.0788 17.4726 18.1015 17.4907C18.2216 17.5898 18.3475 17.6888 18.4742 17.7831C18.5177 17.8155 18.5149 17.8831 18.4676 17.9107C17.8697 18.2602 17.2482 18.5555 16.5945 18.8021C16.552 18.8183 16.533 18.8678 16.5538 18.9088C16.9143 19.6068 17.3258 20.2716 17.7789 20.902C17.7978 20.9287 17.8319 20.9401 17.8631 20.9306C19.8241 20.3239 21.8126 19.4087 23.8654 17.9012C23.8834 17.8879 23.8948 17.8679 23.8967 17.846C24.3971 12.669 23.0585 8.1721 20.3482 4.1856C20.3416 4.17228 20.3303 4.16275 20.317 4.15704ZM8.02002 15.1184C6.8375 15.1184 5.86313 14.0328 5.86313 12.6995C5.86313 11.3662 6.8186 10.2806 8.02002 10.2806C9.23087 10.2806 10.1958 11.3758 10.1769 12.6995C10.1769 14.0328 9.22141 15.1184 8.02002 15.1184ZM15.9947 15.1184C14.8123 15.1184 13.8379 14.0328 13.8379 12.6995C13.8379 11.3662 14.7933 10.2806 15.9947 10.2806C17.2056 10.2806 18.1705 11.3758 18.1516 12.6995C18.1516 14.0328 17.2056 15.1184 15.9947 15.1184Z"
+                                  fill="#C8C7D8"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<dialog class="mobile-overlay visible-tablet" id="mobileOverlay">
+    <form
+            class="mobile-overlay__close-button-wrapper"
+            method="dialog"
+    >
+        <div class="mobile-overlay__inner">
+            <div class="mobile-overlay__header">
+                <a class="header__logo logo" href="/">
+                    <img
+                            class="logo__image"
+                            src="./images/header-logo.svg"
+                            alt=""
+                            width="80" height="48" loading="lazy"
+                    >
+                </a>
+                <button
+                        class="mobile-overlay__button button"
+                        type="button"
+                >
+                    Apply
+                </button>
+            </div>
+            <button
+                    class="mobile-overlay__close-button cross-button"
+                    type="submit"
+            >
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </div>
+    </form>
+
+    <div class="mobile-overlay__menu">
+        <ul class="mobile-overlay__list">
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Discover initiatives
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Funded grants
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Program expenses
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    Blog
+                </a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">
+                    FAQ
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile-overlay__soc1als soc1als">
+        <ul class="soc1als__list">
+            <li class="soc1als__item">
+                <a class="soc1als__link" href="/">
+                    <span class="visually-hidden">Twitter</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z"
+                              fill="#C8C7D8"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="soc1als__item">
+                <a class="soc1als__link" href="/">
+                    <span class="visually-hidden">Discord</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.317 4.15704C18.7873 3.45516 17.147 2.93804 15.4319 2.64187C15.4007 2.63615 15.3695 2.65044 15.3534 2.67901C15.1424 3.05422 14.9087 3.54372 14.7451 3.92846C12.9004 3.65229 11.0652 3.65229 9.25832 3.92846C9.09465 3.53517 8.85248 3.05422 8.64057 2.67901C8.62449 2.65139 8.59328 2.6371 8.56205 2.64187C6.84791 2.93709 5.20756 3.45421 3.67693 4.15704C3.66368 4.16275 3.65233 4.17228 3.64479 4.18466C0.533392 8.83302 -0.31895 13.3671 0.0991801 17.845C0.101072 17.8669 0.11337 17.8879 0.130398 17.9012C2.18321 19.4087 4.17171 20.3239 6.12328 20.9306C6.15451 20.9401 6.18761 20.9287 6.20748 20.903C6.66913 20.2725 7.08064 19.6078 7.43348 18.9088C7.4543 18.8678 7.43442 18.8193 7.39186 18.8031C6.73913 18.5555 6.1176 18.2536 5.51973 17.9107C5.47244 17.8831 5.46865 17.8155 5.51216 17.7831C5.63797 17.6888 5.76382 17.5907 5.88396 17.4917C5.90569 17.4736 5.93598 17.4698 5.96153 17.4812C9.88928 19.2745 14.1415 19.2745 18.023 17.4812C18.0485 17.4688 18.0788 17.4726 18.1015 17.4907C18.2216 17.5898 18.3475 17.6888 18.4742 17.7831C18.5177 17.8155 18.5149 17.8831 18.4676 17.9107C17.8697 18.2602 17.2482 18.5555 16.5945 18.8021C16.552 18.8183 16.533 18.8678 16.5538 18.9088C16.9143 19.6068 17.3258 20.2716 17.7789 20.902C17.7978 20.9287 17.8319 20.9401 17.8631 20.9306C19.8241 20.3239 21.8126 19.4087 23.8654 17.9012C23.8834 17.8879 23.8948 17.8679 23.8967 17.846C24.3971 12.669 23.0585 8.1721 20.3482 4.1856C20.3416 4.17228 20.3303 4.16275 20.317 4.15704ZM8.02002 15.1184C6.8375 15.1184 5.86313 14.0328 5.86313 12.6995C5.86313 11.3662 6.8186 10.2806 8.02002 10.2806C9.23087 10.2806 10.1958 11.3758 10.1769 12.6995C10.1769 14.0328 9.22141 15.1184 8.02002 15.1184ZM15.9947 15.1184C14.8123 15.1184 13.8379 14.0328 13.8379 12.6995C13.8379 11.3662 14.7933 10.2806 15.9947 10.2806C17.2056 10.2806 18.1705 11.3758 18.1516 12.6995C18.1516 14.0328 17.2056 15.1184 15.9947 15.1184Z"
+                              fill="#C8C7D8"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</dialog>
+</body>
+</html>

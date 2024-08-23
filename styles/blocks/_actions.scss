@@ -1,0 +1,10 @@
+.actions{
+  &__link{
+    display: flex;
+    column-gap: 16px;
+    border-radius: 100px;
+    background-color: var(--color-bg-secondary);
+    align-items: center;
+    padding-left: 8px;
+  }
+}

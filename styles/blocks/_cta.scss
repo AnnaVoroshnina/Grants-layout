@@ -1,0 +1,29 @@
+.cta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1224px;
+  height: 248px;
+  margin-top: 80px;
+  padding-inline: 16px;
+  background-image: var(--color-gradient-brand);
+  border-radius: var(--border-radius);
+
+  @include tablet{
+    argin-top: 40px;
+  }
+  &__title{
+  margin-bottom: 40px;
+}
+  &__description{
+    @include fluid-text(16, 18);
+    margin-bottom: 8px;
+  }
+  &__button{
+    @include mobile{
+      width: 100%;
+    }
+  }
+}

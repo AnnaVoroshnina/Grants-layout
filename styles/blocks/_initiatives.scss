@@ -1,0 +1,32 @@
+.initiatives{
+
+  @include tablet{
+    row-gap: 40px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    max-width: 808px;
+    row-gap: 24px;
+    margin-inline: auto;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 24px;
+    padding: 24px;
+    width: 100%;
+    height: 168px;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+
+    @include mobile{
+      flex-direction: column;
+      row-gap: 16px;
+      height: 284px;
+    }
+  }
+}

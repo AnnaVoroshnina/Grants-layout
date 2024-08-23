@@ -1,0 +1,37 @@
+.blog{
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(2, 392px);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet{
+      grid-template-columns: repeat(1, 272px);
+    }
+  }
+  &__item{
+    /*width: 392px;*/
+    height: 440px;
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+
+    @include tablet{
+      /*width: 272px;*/
+      height: 362px;
+    }
+  }
+
+  &__button{
+    display: block;
+    width: 180px;
+    margin-inline: auto;
+    margin-top: 80px;
+    padding-block: 10px;
+    text-align: center;
+
+    @include tablet{
+      margin-top: 40px;
+    }
+  }
+}

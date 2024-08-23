@@ -1,0 +1,19 @@
+.similar-projects {
+  max-width: 808px;
+  margin-inline: auto;
+
+  &__list{
+    display: grid;
+    grid-template-columns: var(--cardWidth) var(--cardWidth);
+    grid-gap: 24px;
+    justify-content: center;
+
+
+    @include mobile{
+      grid-template-columns: 272px;
+      grid-template-rows: repeat(2, var(--cardHeight));
+      justify-content: center;
+
+    }
+  }
+}
